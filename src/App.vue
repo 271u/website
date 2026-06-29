@@ -35,6 +35,8 @@ const discordInviteUrl = 'https://discord.gg/VUAU7U3NBf'
       <div class="actions">
         <a
           class="discord-button"
+          id="discord-button"
+          data-umami-event="discord-button-clicked"
           :href="discordInviteUrl"
           target="_blank"
           rel="noopener noreferrer"
