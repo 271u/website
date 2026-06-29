@@ -1,0 +1,13 @@
+minimumReleaseAge: 10080
+minimumReleaseAgeStrict: true
+
+blockExoticSubdeps: true
+strictDepBuilds: true
+
+allowBuilds:
+  esbuild: true
+
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - 'detect-port@1.6.1'
+  - 'semver@6.3.1'

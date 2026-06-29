@@ -1,0 +1,43 @@
+version: '3'
+
+tasks:
+  default:
+    desc: Show available tasks
+    cmds:
+      - task --list
+
+  install:
+    desc: Install dependencies
+    cmds:
+      - pnpm i --frozen-lockfile
+
+  dev:
+    desc: Start local development server
+    cmds:
+      - pnpm dev
+
+  build:
+    desc: Build production assets
+    cmds:
+      - pnpm build
+
+  preview:
+    desc: Preview production build locally
+    cmds:
+      - pnpm preview
+
+  lint:
+    desc: Run ESLint
+    cmds:
+      - pnpm lint
+
+  format:
+    desc: Format files with Prettier
+    cmds:
+      - pnpm format
+
+  check:
+    desc: Run lint and type/build checks
+    cmds:
+      - task: lint
+      - task: build
